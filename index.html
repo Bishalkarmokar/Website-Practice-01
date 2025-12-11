@@ -24,7 +24,8 @@
         </ul>
 
         <button id="mobileMenuBtn" class="mobile-menu-btn">
-          <i class="ri-menu-line"></i>
+          <i id="menuBtn-1" class="ri-menu-line"></i>
+          <i id="menuBtn-2" class="ri-close-large-line hidden"></i>
         </button>
       </nav>
       <div class="banner">
@@ -63,9 +64,15 @@
   <script>
     const menuBtn = document.getElementById("mobileMenuBtn");
     const navLinks = document.getElementById("navLinks");
+    const menuBtn_1 = document.getElementById("menuBtn-1");
+    const menuBtn_2 = document.getElementById("menuBtn-2");
 
     menuBtn.addEventListener("click", () => {
       navLinks.classList.toggle("active");
     });
+    menuBtn.addEventListener("click", () =>{
+      menuBtn_1.classList.toggle("hidden");
+      menuBtn_2.classList.toggle("hidden");
+    })
   </script>
 </html>

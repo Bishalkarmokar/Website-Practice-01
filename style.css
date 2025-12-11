@@ -48,6 +48,9 @@ nav ul li a {
   display: none;
   cursor: pointer;
 }
+.hidden {
+  display: none;
+}
 .banner {
   margin-top: 30px;
 }
