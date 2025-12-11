@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Architects Site</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+<nav class="navbar">
+  <h2>G3 Architects</h2>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Login</a></li>
+  </ul>
+
+  <button id="mobileMenuBtn" class="mobile-menu-btn">
+    <i class="ri-menu-line"></i>
+  </button>
+</nav>
+      <div class="banner">
+            <div class="banner-text">
+              <h3>Brand New <br>Group of Architects</h3>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+            </p>
+            <button>Explore More</button>
+            </div>
+            <div class="banner-img">
+              <img src="./assets/banner.png" alt="">
+            </div>
+          </div>
+    </header>
+  </body>
+  <script>
+    const menuBtn = document.getElementById("mobileMenuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+  </script>
+</html>
