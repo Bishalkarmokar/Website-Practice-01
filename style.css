@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: "Poppins", sans-serif;
 }
 header {
@@ -20,7 +20,6 @@ nav {
   padding: 30px 0;
   width: 80%;
   margin: 0 auto;
-
 }
 
 nav h2 {
@@ -75,16 +74,16 @@ nav ul li a {
   font-size: 18px;
   padding: 10px 20px;
   border: none;
-  background-color: #FF900E;
-  border: 1px solid #FF900E;
+  background-color: #ff900e;
+  border: 1px solid #ff900e;
   color: #fff;
   border-radius: 5px;
   margin-bottom: 30px;
   transition: 0.3s ease-in-out;
 }
-.banner-text button:hover{
+.banner-text button:hover {
   background-color: white;
-  color: #FF900E; 
+  color: #ff900e;
 }
 .banner-img {
   display: flex;
@@ -92,61 +91,59 @@ nav ul li a {
 }
 .banner-img img {
   max-width: 80%;
-  
 }
-main{
+main {
   width: 80%;
   margin: 0 auto;
 }
-.container{
+.container {
   display: flex;
   gap: 40px;
   margin-top: 50px;
 }
-.section-1{
+.section-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.section-2{
+.section-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.section-2 h3{
+.section-2 h3 {
   font-size: 38px;
   padding: 0 0 40px 0;
 }
-.section-2 p{
+.section-2 p {
   color: gray;
   font-size: 14px;
-
 }
-.span-heading-1{
+.span-heading-1 {
   color: gray;
   font-weight: 400;
 }
-.span-heading-2{
-  color: #FF900E;
+.span-heading-2 {
+  color: #ff900e;
 }
 .section-2 button {
   width: 200px;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
-  background-color: #FF900E;
-  border: 1px solid #FF900E;
+  background-color: #ff900e;
+  border: 1px solid #ff900e;
   color: #fff;
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 30px;
   transition: 0.3s ease-in-out;
 }
-.section-2 button:hover{
+.section-2 button:hover {
   background-color: white;
-  color: #FF900E; 
+  color: #ff900e;
 }
-.container-2{
+.container-2 {
   display: flex;
   gap: 100px;
   margin-top: 120px;
@@ -155,12 +152,12 @@ main{
 .line {
   width: 6px;
   height: 90px;
-  background-color: #FF900E;
+  background-color: #ff900e;
 }
-.first-section{
+.first-section {
   width: 45%;
 }
-.first-section-heading{
+.first-section-heading {
   display: flex;
   gap: 14px;
 }
@@ -207,7 +204,7 @@ main{
   position: absolute;
   bottom: 0;
   left: 45%;
-  background-color: #FF900E;
+  background-color: #ff900e;
   padding: 25px 40px;
   border-radius: 5px;
 }
@@ -242,39 +239,57 @@ main{
   .mobile-menu-btn {
     display: block;
   }
-  main{
-  width: 90%;
-  margin: 0 auto;
-}
-  .container{
-  flex-direction: column;
-}
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .container {
+    flex-direction: column;
+  }
   .banner .banner-text h3 {
-  font-size: 25px;
-  text-align: center;
-  margin-bottom: 5px;
-}
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
   .banner .banner-text p {
-  font-size: 10px;
-  width: 90%;
-}
-.section-1{
-  gap: 12px;
-}
-.section-1 img{
-  width: 100%;
-}
-.section-2{
-  text-align: center;
-}
-.section-2 h3{
-  font-size: 34px;
-  padding: 0 0 30px 0;
-}
-.section-2 button {
-  width: 100%;
-  font-size: 18px;
-}
+    font-size: 10px;
+    width: 90%;
+  }
+  .section-1 {
+    gap: 12px;
+  }
+  .section-1 img {
+    width: 100%;
+  }
+  .section-2 {
+    text-align: center;
+  }
+  .section-2 h3 {
+    font-size: 34px;
+    padding: 0 0 30px 0;
+  }
+  .section-2 button {
+    width: 100%;
+    font-size: 18px;
+  }
+  .container-2 {
+    flex-direction: column-reverse;
+  }
+  .first-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .second-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .experience {
+    bottom: 61%;
+    left: -2%;
+  }
+  .card {
+    padding: 5px;
+  }
 }
 
 /* nav{
