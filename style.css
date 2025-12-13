@@ -180,7 +180,7 @@ main {
   background: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 .cards h5 {
   font-size: 20px;
@@ -196,29 +196,113 @@ main {
 }
 .second-section {
   width: 55%;
+  position: relative;
 }
 .second-section img {
   width: 100%;
+  height: auto;
+  position: relative;
 }
 .experience {
   position: absolute;
-  bottom: 0;
-  left: 45%;
   background-color: #ff900e;
   padding: 25px 40px;
   border-radius: 5px;
+          bottom: -50px;
+        left: -48px;
+
 }
 .experience h3 {
-  font-size: 50px;
+  font-size: 5vmin;
   color: #fff;
 }
-.experience p {
-  font-size: 20px;
+.experience span {
+  font-size: 2vmin;
   text-align: center;
   color: #fff;
 }
+.container-3 {
+  margin-top: 100px;
+}
+.container-3 h4{
+  font-size: 30px;
+}
+.container-3 p {
+  font-size: 16px;
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+.boxs{
+  display: flex;
+  justify-content: space-between;
+}
+.box{
+  width: 240px;
+  height: 240px;
+  border: 2px solid #ff900e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box img {
+  margin-top: 85px;
+}
+.box h5 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.sponspors-section{
+  text-align: center;
+  margin-top: 70px;
+}
+.sponspors-section h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.sponspors-section p{
+  color: gray;
+}
+.sponspors{
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  filter: grayscale(100%);
+  flex-wrap: wrap;
+}
+footer{
+  width: 80vw;
+  margin: 100px auto;
+  background-color: #FFF4E7;
+  text-align: center;
+  padding: 20px 0;
+}
 /* ========== RESPONSIVE ========== */
-@media (max-width: 600px) {
+@media (max-width: 1200px){
+  .section-1{
+    width: 50%;
+    gap: 10px;
+  }
+  .section-1 img{
+    width: 100%;
+  }
+  .section-2{
+    width: 50%;
+  }
+  .section-2 h3 {
+    font-size: 3vw;
+  }
+  .section-2 p {
+    font-size: 1.5vw;
+  }
+  .experience {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
   nav ul {
     position: absolute;
     top: 66px;
@@ -257,11 +341,13 @@ main {
   }
   .section-1 {
     gap: 12px;
+    width: 100%;
   }
   .section-1 img {
     width: 100%;
   }
   .section-2 {
+    width: 100%;
     text-align: center;
   }
   .section-2 h3 {
@@ -290,6 +376,28 @@ main {
   .card {
     padding: 5px;
   }
+  .container-3 p {
+  font-size: 11px;
+}
+.boxs{
+  gap: 10px;
+}
+.box{
+  width: 140px;
+  height: 140px;
+}
+.box img {
+  margin-top: 60px;
+}
+.box h5 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.box p{
+  margin-top: 0;
+  font-size: 9px;
+}
+
 }
 
 /* nav{
